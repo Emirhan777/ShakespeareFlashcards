@@ -91,3 +91,30 @@ code {
   padding: 1px 6px;
   font-size: 14px;
 }
+
+/* App icon in the page header */
+.hero {
+  display: flex;
+  align-items: center;
+  gap: 22px;
+  flex-wrap: wrap;
+}
+
+.app-icon {
+  width: 104px;
+  height: 104px;
+  flex: 0 0 auto;
+  border-radius: 23%;
+  background: #fff;                 /* engraving is black on white */
+  border: 1px solid var(--border);
+  box-shadow: 0 6px 20px rgba(0, 0, 0, .16);
+  object-fit: cover;
+}
+
+.hero-text { min-width: 0; }
+.hero-text h1 { margin-bottom: 6px; }
+
+@media (max-width: 460px) {
+  .app-icon { width: 84px; height: 84px; }
+  h1 { font-size: 26px; }
+}
